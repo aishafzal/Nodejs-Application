@@ -1,0 +1,22 @@
+<html>
+<head>
+    
+</head>
+<body>
+    <h2>PRODUCT BODY</h2>
+    <%- include('nav') -%>
+    <h1>Product</h1>
+   <ul>
+<% for(let i=0;i<product.length;i++) {%>
+    <li>
+     <a href = <%='product/getProduct/'+product[i]._id %>>
+     <%= product[i]._id %>
+     <%= product[i].name %>
+     <%= product[i].brand %>
+     <%= product[i].price %>
+     </a>
+    </li>
+<% } %>    
+</ul>
+</body>
+</html>
